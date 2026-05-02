@@ -517,11 +517,12 @@ BUILTIN_THEMES: dict[str, Theme] = {
         warning="#FBB829",
         error="#EF2F27",
         success="#519F50",
-        # accent="#FED06E",
+        accent="#2C78BF",
         foreground="#BAA67F",
         background="#1C1B19",
         surface="#303030",
         panel="#262626",
+        dark=True,
         variables={
             "scrollbar-background": "#262626",
             # "text": "#BAA67F",
