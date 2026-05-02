@@ -510,6 +510,29 @@ BUILTIN_THEMES: dict[str, Theme] = {
             "screen-selection-foreground": "ansi_bright_white",
         },
     ),
+    "srcery": Theme(
+        name="srcery",
+        primary="#FCE8C3",
+        secondary="#BAA67F",
+        warning="#FBB829",
+        error="#EF2F27",
+        success="#519F50",
+        accent="#FED06E",
+        foreground="#BAA67F",
+        background="#1C1B19",
+        surface="#262626",
+        panel="#262626",
+        variables={
+            # "text": "#BAA67F",
+            # "text-muted": "#F75341",
+            #     "block-cursor-background": "#BAA67F",
+            #     "block-cursor-foreground": "#1C1B19",
+            #     "block-cursor-text-style": "none",
+            #     "input-selection-background": "#2C78BF 35%",
+            #     "button-color-foreground": "#1C1B19",
+            "footer-key-foreground": "#FCE8C3",
+        },
+    ),
 }
 
 

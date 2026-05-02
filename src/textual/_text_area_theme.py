@@ -423,6 +423,66 @@ _GITHUB_LIGHT = TextAreaTheme(
     },
 )
 
+_SRCERY = TextAreaTheme(
+    name="srcery",
+    base_style=Style(color="#BAA67F", bgcolor="#1C1B19"),  # white on black
+    gutter_style=Style(color="#918175", bgcolor="#1C1B19"),  # bright_black
+    cursor_style=Style(color="#1C1B19", bgcolor="#FCE8C3"),  # black on bright_white
+    cursor_line_style=Style(bgcolor="#262626"),  # xgray1 for subtle highlight
+    cursor_line_gutter_style=Style(color="#FCE8C3", bgcolor="#262626"),  # bright_white
+    bracket_matching_style=Style(bgcolor="#585858", bold=True),  # xgray6 for visibility
+    selection_style=Style(bgcolor="#303030"),  # xgray2 for selection
+    syntax_styles={
+        "string": Style(color="#98BC37"),  # bright_green
+        "string.documentation": Style(color="#98BC37"),  # bright_green
+        "comment": Style(color="#585858"),  # xgray6 (muted)
+        "heading.marker": Style(color="#918175"),  # bright_black
+        "keyword": Style(color="#EF2F27"),  # red
+        "operator": Style(color="#BAA67F"),  # white
+        "repeat": Style(color="#EF2F27"),  # red
+        "exception": Style(color="#EF2F27"),  # red
+        "include": Style(color="#EF2F27"),  # red
+        "keyword.function": Style(color="#EF2F27"),  # red
+        "keyword.return": Style(color="#EF2F27"),  # red
+        "keyword.operator": Style(color="#EF2F27"),  # red
+        "conditional": Style(color="#EF2F27"),  # red
+        "number": Style(color="#E02C6D"),  # magenta
+        "float": Style(color="#E02C6D"),  # magenta
+        "class": Style(color="#FBB829"),  # yellow
+        "type": Style(color="#FBB829"),  # yellow
+        "type.class": Style(color="#FBB829"),  # yellow
+        "type.builtin": Style(color="#2C78BF"),  # blue
+        "variable.builtin": Style(color="#BAA67F"),  # white
+        "function": Style(color="#FBB829"),  # yellow
+        "function.call": Style(color="#FBB829"),  # yellow
+        "method": Style(color="#FBB829"),  # yellow
+        "method.call": Style(color="#FBB829"),  # yellow
+        "boolean": Style(color="#FF5C8F", italic=True),  # bright_magenta
+        "constant.builtin": Style(color="#FF5C8F", italic=True),  # bright_magenta
+        "json.null": Style(color="#FF5C8F", italic=True),  # bright_magenta
+        "regex.punctuation.bracket": Style(color="#EF2F27"),  # red
+        "regex.operator": Style(color="#EF2F27"),  # red
+        "html.end_tag_error": Style(color="#F75341", underline=True),  # bright_red
+        "tag": Style(color="#EF2F27"),  # red
+        "yaml.field": Style(color="#EF2F27", bold=True),  # red
+        "json.label": Style(color="#EF2F27", bold=True),  # red
+        "toml.type": Style(color="#EF2F27"),  # red
+        "toml.datetime": Style(color="#E02C6D"),  # magenta
+        "css.property": Style(color="#2C78BF"),  # blue
+        "heading": Style(color="#EF2F27", bold=True),  # red
+        "bold": Style(bold=True),
+        "italic": Style(italic=True),
+        "strikethrough": Style(strike=True),
+        "link.label": Style(color="#EF2F27"),  # red
+        "link.uri": Style(color="#0AAEB3", underline=True),  # cyan
+        "list.marker": Style(color="#918175"),  # bright_black
+        "inline_code": Style(color="#98BC37"),  # bright_green
+        "punctuation.bracket": Style(color="#BAA67F"),  # white
+        "punctuation.delimiter": Style(color="#BAA67F"),  # white
+        "punctuation.special": Style(color="#BAA67F"),  # white
+    },
+)
+
 _CSS_THEME = TextAreaTheme(name="css", syntax_styles=_DARK_VS.syntax_styles)
 
 _BUILTIN_THEMES = {
@@ -431,4 +491,5 @@ _BUILTIN_THEMES = {
     "dracula": _DRACULA,
     "vscode_dark": _DARK_VS,
     "github_light": _GITHUB_LIGHT,
+    "srcery": _SRCERY,
 }
