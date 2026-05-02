@@ -517,10 +517,10 @@ BUILTIN_THEMES: dict[str, Theme] = {
         warning="#FBB829",
         error="#EF2F27",
         success="#519F50",
-        accent="#FED06E",
+        # accent="#FED06E",
         foreground="#BAA67F",
         background="#1C1B19",
-        surface="#262626",
+        surface="#303030",
         panel="#262626",
         variables={
             # "text": "#BAA67F",
