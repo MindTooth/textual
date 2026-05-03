@@ -526,7 +526,7 @@ BUILTIN_THEMES: dict[str, Theme] = {
         variables={
             "scrollbar-background": "#262626",
             # "text": "#BAA67F",
-            # "text-muted": "#F75341",
+            "text-muted": "#BAA67F",
             #     "block-cursor-background": "#BAA67F",
             #     "block-cursor-foreground": "#1C1B19",
             #     "block-cursor-text-style": "none",
